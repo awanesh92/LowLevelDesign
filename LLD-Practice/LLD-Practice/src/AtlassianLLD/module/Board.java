@@ -18,6 +18,10 @@ public class Board {
     this.snake = snake;
   }
 
+  public Snake getSnake() {
+    return snake;
+  }
+
   public boolean isValidMove(Position position) {
     return !snake.getBodyPosition().contains(position);
   }

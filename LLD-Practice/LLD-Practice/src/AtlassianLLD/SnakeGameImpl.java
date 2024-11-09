@@ -26,6 +26,14 @@ public class SnakeGameImpl implements snakeGame {
     snake.setAlive(false);
   }
 
+  public Board getBoard() {
+    return board;
+  }
+
+  public Snake getSnake() {
+    return snake;
+  }
+
   @Override
   public boolean isGameOver() {
     return snake.isAlive();
